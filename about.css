@@ -7,7 +7,7 @@ body {
 
 
 header {
-    background-color: #333;
+    background-color: #4CAF50;
     color: #fff;
     padding: 10px 0;
 }
@@ -29,7 +29,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #ff6347;
+    color: black;
+    background-color: white;
 }
 
 #about {
