@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | My Portfolio</title>
     <link rel="stylesheet" href="contact.css">
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault(); 
+            alert("Request sent successfully!"); 
+            document.getElementById("contact-form").reset(); 
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -12,7 +19,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">skills</a></li>
+                <li><a href="skills.html">Skills</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
@@ -22,7 +29,7 @@
         <h1>Contact Me</h1>
         <p>If you'd like to get in touch, feel free to drop a message below.</p>
         
-        <form action="submit_form.php" method="POST" id="contact-form">
+        <form action="#" method="POST" id="contact-form" onsubmit="handleFormSubmit(event)">
             <div class="form-group">
                 <label for="name">Your Name</label>
                 <input type="text" id="name" name="name" required>
@@ -45,6 +52,5 @@
     <footer>
         <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
     </footer>
-
 </body>
 </html>
