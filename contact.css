@@ -1,5 +1,5 @@
 
-/* General Styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,7 +9,7 @@ body {
 }
 header {
     background-color: #4CAF50;
-    color: #fff;
+    color: black;
     padding: 10px 0;
 }
 
@@ -33,7 +33,7 @@ header nav ul li a:hover {
     color: black;
     background-color: white;
 }
-/* Container */
+
 .contact-section {
     max-width: 800px;
     margin: 50px auto;
@@ -57,14 +57,14 @@ header nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-/* Contact Form */
+
 #contact-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-/* Form Group */
+
 .form-group {
     display: flex;
     flex-direction: column;
@@ -93,9 +93,9 @@ header nav ul li a:hover {
     border-color: #007BFF;
 }
 
-/* Button */
+
 .submit-btn {
-    background-color: #007BFF;
+    background-color: green;
     color: #fff;
     font-size: 1rem;
     font-weight: bold;
@@ -107,7 +107,7 @@ header nav ul li a:hover {
 }
 
 .submit-btn:hover {
-    background-color: #0056b3;
+    background-color: green;
     transform: translateY(-2px);
 }
 
