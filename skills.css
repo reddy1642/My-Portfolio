@@ -8,98 +8,109 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     color: #333;
 }
 
 
 header {
-    background-color: green;
+    background-color: #28a745;
     color: #fff;
-    padding: 10px 0;
+    padding: 30px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header nav ul {
     list-style: none;
     text-align: center;
+    padding: 0;
 }
 
 header nav ul li {
     display: inline-block;
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
 header nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: bold;
     text-transform: uppercase;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
 }
 
 header nav ul li a:hover {
-    color: black;
+    color: #333;
+    background-color: #fff;
+    border-radius: 5px;
 }
 
-
 #skills {
-    padding: 50px 20px;
+    padding: 80px 20px;
     background-color: #fff;
     text-align: center;
 }
 
 .skills-content h2 {
     font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #333;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #28a745;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
 .skill-item {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fafafa;
+    transition: transform 0.3s ease-in-out;
 }
 
 .skill-item h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.skill-item p {
+skill-item p {
     font-size: 1.1rem;
     color: #555;
+    line-height: 1.6;
 }
-
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     position: relative;
     bottom: 0;
     width: 100%;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
-
-@media (max-width: 768px) {
-    .skills-content {
-        padding: 20px;
-    }
-
-    .skills-content h2 {
-        font-size: 2rem;
-    }
+footer p {
+    margin: 0;
 }
 
-@media (max-width: 480px) {
-    header nav ul li {
-        margin-right: 10px;
-    }
-
-    header nav ul li a {
-        font-size: 16px;
-    }
-
-    footer {
-        padding: 5px;
-    }
+header nav ul li a {
+    font-size: 14px;
 }
