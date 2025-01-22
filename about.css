@@ -180,5 +180,15 @@ footer {
   }
   
   
-
+  @media (max-width: 768px) {
+    .Resumecontainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .resume-section, .resume1 {
+      width: 80%;
+    }
+  }
+  
 
